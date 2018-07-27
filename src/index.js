@@ -1,67 +1,63 @@
-import React from 'react';
-import { StyleSheet, Text, View, Linking, TouchableOpacity } from 'react-native';
-import Permissions from 'react-native-permissions';
-import QRCodeScanner from 'react-native-qrcode-scanner';
+import React, { Component } from 'react';
+ 
+import { Platform, View, Text, Image, TouchableOpacity, YellowBox } from 'react-native';
 
-export default class App extends React.Component {
+import { DrawerNavigator } from 'react-navigation';
 
-	constructor(props) {
-		super(props)
-		this.state = {
-			cameraPermission: false,
-			data: null
-		}
-	}
+import { StackNavigator } from 'react-navigation';
 
-	componentDidMount() {
-		Permissions.request('camera').then(response => {
-      this.setState({ cameraPermission: response })
-    })
-	}
+import HomeScreen from './screens/homeScreen';
 
-	onSuccess = e => {
-   this.setState({
-		 data: e.data
-	 })
+import SideMenu from './components/sideMenu';
+
+class HamburgerIcon extends Component {
+
+  toggleDrawer=()=>{
+    this.props.navigationProps.toggleDrawer();
   }
-
+ 
   render() {
+
     return (
-      <QRCodeScanner
-        onRead={this.onSuccess}
-        topContent={
-          <Text style={styles.centerText}>
-						data fain: {this.state.data}
-          </Text>
-        }
-        bottomContent={
-          <TouchableOpacity style={styles.buttonTouchable}>
-            <Text style={styles.buttonText}>OK. Got it!</Text>
-          </TouchableOpacity>
-				}
-				reactivate={true}
-				reactivateTimeout={2000}
-      />
+
+      <View style={{flexDirection: 'row'}}>
+ 
+        <TouchableOpacity onPress={this.toggleDrawer.bind(this)} >
+
+          <Image
+            source={{uri : 'https://reactnativecode.com/wp-content/uploads/2018/04/hamburger_icon.png'}}
+            style={{ width: 25, height: 25, marginLeft: 5}}
+          />
+
+        </TouchableOpacity>
+
+      </View>
+    
     );
+
+  
   }
 }
+    const HomeScreenStack = StackNavigator({
+      First: {
+        screen: HomeScreen,
+        navigationOptions: ({ navigation }) => ({
+          title: 'Qr Scanner',
+          headerLeft : <HamburgerIcon navigationProps={ navigation }/>,
 
-const styles = StyleSheet.create({
-  centerText: {
-    flex: 1,
-    fontSize: 18,
-    padding: 32,
-    color: '#777',
-  },
-  textBold: {
-    fontWeight: '500',
-    color: '#000',
-  },
-  buttonText: {
-    fontSize: 21,
-    color: 'rgb(0,122,255)',
-  },
-  buttonTouchable: {
-    padding: 16,
-  },
+          headerStyle: {
+            backgroundColor: '#26C6DA'
+          },
+          headerTintColor: '#EEEEEE',
+        })
+      },
+    });
+
+export default App = DrawerNavigator({
+	MainStack: {
+    screen: HomeScreenStack
+  }
+	}, {
+		contentComponent: SideMenu,
+		drawerWidth: 300
 });
