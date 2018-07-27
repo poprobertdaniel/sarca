@@ -26,7 +26,19 @@ export default class SideMenu extends Component {
 	}
 
 	switchText = () => {
-		AsyncStorage.setItem('text', JSON.stringify({text: !this.state.text}))
+		AsyncStorage.setItem('requestData', JSON.stringify({
+			requestData: [
+				{
+					text: !this.state.text
+				},
+				{
+					image: this.state.image
+				},
+				{
+					audio: this.state.audio
+				}
+			]
+		}))
 			.then( () => {
 				this.setState({
 					text: !this.state.text
@@ -35,7 +47,19 @@ export default class SideMenu extends Component {
 	}
 
 	switchImage = () => {
-		AsyncStorage.setItem('image', JSON.stringify({image: !this.state.image}))
+		AsyncStorage.setItem('requestData', JSON.stringify({
+			requestData: [
+				{
+					text: this.state.text
+				},
+				{
+					image: !this.state.image
+				},
+				{
+					audio: this.state.audio
+				}
+			]
+		}))
 			.then( () => {
 				this.setState({
 					image: !this.state.image
@@ -44,7 +68,19 @@ export default class SideMenu extends Component {
 	}
 
 	switchAudio = () => {
-		AsyncStorage.setItem('audio', JSON.stringify({audio: !this.state.audio}))
+		AsyncStorage.setItem('requestData', JSON.stringify({
+			requestData: [
+				{
+					text: this.state.text
+				},
+				{
+					image: this.state.image
+				},
+				{
+					audio: !this.state.audio
+				}
+			]
+		}))
 			.then( () => {
 				this.setState({
 					audio: !this.state.audio
