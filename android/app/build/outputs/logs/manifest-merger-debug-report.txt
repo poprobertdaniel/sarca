@@ -1,0 +1,295 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:1:1-28:12
+MERGED from [:react-native-camera] /Users/robertpop/Public/personalProjects/sarca/node_modules/react-native-camera/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-20:12
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/91095dfe4d414101ba5873d80babcc32/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/014a902b94b684fd84f722fbb2c1692a/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-vision:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-12.0.1.aar/464f6c5b054150069c69abd19a9c127b/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:exifinterface:27.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.0.aar/90c3cc5c82ec862c5dc0caf428e506eb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/db6763ec08ddfee54fd69b76c2c46cb6/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/9ec18f4618849137daabb70956912c5b/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d5d3a65790865c6973ffdc3d7262157c/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/0ffab15032276742633b27b45dd34acf/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d42a946bb7c551caf39310bd865cdcdf/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/cee6233df9456a223f9b9956923e374b/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/897d558658444a4ff2a0c642784e8abc/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5c20345f89cd4033c2ee6a6927e0c227/AndroidManifest.xml:17:1-31:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/3d28b3b10ed530b0b8c3c81b4ab8d37b/AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/ef83411ca105a1aadb6d53c187916895/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/1fbdb38196a8a4ce79f0d6990e3a39dd/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/d669081b71f55f238957dcd83f1abd84/AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/07d624d886d028526e692859440d698e/AndroidManifest.xml:1:1-3:12
+MERGED from [com.google.android.gms:play-services-vision-common:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-12.0.1.aar/8f09e62d5d390eb5af752673fdfb8a30/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/afcc28b0ca88cc027e8386407d80a67b/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.1.aar/3a7ef71ed3a279c2bd8367f61a8c84ea/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/a3197a553334ce10de827b4c78524346/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-vision-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-12.0.1.aar/dd96032df500048c1146245e3f777563/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/4d9fb1ddd83a532df674c33be37d5bff/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/7b3aea660191f7f57d778022e686cd3f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/ebdb3d497d7874d372a7b632b4a4c518/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/26080172a2483a85cd2619f87e1531a6/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.1.aar/cd4fb20865e79408a859ada653438afd/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.1.aar/0647540946a047b53b8852d14916ac3e/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-vision-common-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-12.0.1.aar/cde5e0113ac24892fa78f7e701c559d6/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.1.aar/5b976098a0f40a602aed0b7ad77b5e50/AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/59f0a7dc1705de06e97168669d0c7d60/AndroidManifest.xml:17:1-30:12
+INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:1:1-28:12
+	package
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:2:5-24
+		INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:1:1-28:12
+		INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:1:1-28:12
+		INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/91095dfe4d414101ba5873d80babcc32/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/91095dfe4d414101ba5873d80babcc32/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:5:22-75
+uses-permission#android.permission.CAMERA
+ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:6:5-65
+MERGED from [:react-native-camera] /Users/robertpop/Public/personalProjects/sarca/node_modules/react-native-camera/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-65
+MERGED from [:react-native-camera] /Users/robertpop/Public/personalProjects/sarca/node_modules/react-native-camera/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-65
+	android:name
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:6:22-62
+uses-permission-sdk-23#android.permission.VIBRATE
+ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:7:5-72
+	android:name
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:7:29-70
+application
+ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:9:5-26:19
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/91095dfe4d414101ba5873d80babcc32/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/91095dfe4d414101ba5873d80babcc32/AndroidManifest.xml:13:5-20
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/014a902b94b684fd84f722fbb2c1692a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/014a902b94b684fd84f722fbb2c1692a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.google.android.gms:play-services-vision:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-12.0.1.aar/464f6c5b054150069c69abd19a9c127b/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-12.0.1.aar/464f6c5b054150069c69abd19a9c127b/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/db6763ec08ddfee54fd69b76c2c46cb6/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/db6763ec08ddfee54fd69b76c2c46cb6/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/9ec18f4618849137daabb70956912c5b/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/9ec18f4618849137daabb70956912c5b/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d5d3a65790865c6973ffdc3d7262157c/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d5d3a65790865c6973ffdc3d7262157c/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/0ffab15032276742633b27b45dd34acf/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/0ffab15032276742633b27b45dd34acf/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d42a946bb7c551caf39310bd865cdcdf/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d42a946bb7c551caf39310bd865cdcdf/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/cee6233df9456a223f9b9956923e374b/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/cee6233df9456a223f9b9956923e374b/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/897d558658444a4ff2a0c642784e8abc/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/897d558658444a4ff2a0c642784e8abc/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5c20345f89cd4033c2ee6a6927e0c227/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5c20345f89cd4033c2ee6a6927e0c227/AndroidManifest.xml:25:5-29:19
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/d669081b71f55f238957dcd83f1abd84/AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/d669081b71f55f238957dcd83f1abd84/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/07d624d886d028526e692859440d698e/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/07d624d886d028526e692859440d698e/AndroidManifest.xml:2:3-17
+MERGED from [com.google.android.gms:play-services-vision-common:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-12.0.1.aar/8f09e62d5d390eb5af752673fdfb8a30/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-12.0.1.aar/8f09e62d5d390eb5af752673fdfb8a30/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/afcc28b0ca88cc027e8386407d80a67b/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/afcc28b0ca88cc027e8386407d80a67b/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.1.aar/3a7ef71ed3a279c2bd8367f61a8c84ea/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.1.aar/3a7ef71ed3a279c2bd8367f61a8c84ea/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/a3197a553334ce10de827b4c78524346/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/a3197a553334ce10de827b4c78524346/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-vision-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-12.0.1.aar/dd96032df500048c1146245e3f777563/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-vision-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-12.0.1.aar/dd96032df500048c1146245e3f777563/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.1.aar/cd4fb20865e79408a859ada653438afd/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.1.aar/cd4fb20865e79408a859ada653438afd/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.1.aar/0647540946a047b53b8852d14916ac3e/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.1.aar/0647540946a047b53b8852d14916ac3e/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-vision-common-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-12.0.1.aar/cde5e0113ac24892fa78f7e701c559d6/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-vision-common-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-12.0.1.aar/cde5e0113ac24892fa78f7e701c559d6/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.1.aar/5b976098a0f40a602aed0b7ad77b5e50/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.1.aar/5b976098a0f40a602aed0b7ad77b5e50/AndroidManifest.xml:22:5-20
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/59f0a7dc1705de06e97168669d0c7d60/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/59f0a7dc1705de06e97168669d0c7d60/AndroidManifest.xml:24:5-28:19
+	android:label
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:11:7-39
+	android:icon
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:12:7-41
+	android:allowBackup
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:13:7-34
+	android:theme
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:14:7-38
+	android:name
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:10:7-38
+activity#com.sarca.MainActivity
+ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:15:7-24:18
+	android:label
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:17:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:19:9-51
+	android:configChanges
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:18:9-79
+	android:name
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:16:9-37
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:20:9-23:25
+action#android.intent.action.MAIN
+ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:21:13-65
+	android:name
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:21:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:22:13-73
+	android:name
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:22:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:25:7-84
+	android:name
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:25:17-81
+uses-sdk
+INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-camera] /Users/robertpop/Public/personalProjects/sarca/node_modules/react-native-camera/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-camera] /Users/robertpop/Public/personalProjects/sarca/node_modules/react-native-camera/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/91095dfe4d414101ba5873d80babcc32/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/91095dfe4d414101ba5873d80babcc32/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/014a902b94b684fd84f722fbb2c1692a/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/014a902b94b684fd84f722fbb2c1692a/AndroidManifest.xml:21:5-23:78
+MERGED from [com.google.android.gms:play-services-vision:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-12.0.1.aar/464f6c5b054150069c69abd19a9c127b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-12.0.1.aar/464f6c5b054150069c69abd19a9c127b/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.0.aar/90c3cc5c82ec862c5dc0caf428e506eb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.0.aar/90c3cc5c82ec862c5dc0caf428e506eb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/db6763ec08ddfee54fd69b76c2c46cb6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/db6763ec08ddfee54fd69b76c2c46cb6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/9ec18f4618849137daabb70956912c5b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/9ec18f4618849137daabb70956912c5b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d5d3a65790865c6973ffdc3d7262157c/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d5d3a65790865c6973ffdc3d7262157c/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/0ffab15032276742633b27b45dd34acf/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/0ffab15032276742633b27b45dd34acf/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d42a946bb7c551caf39310bd865cdcdf/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d42a946bb7c551caf39310bd865cdcdf/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/cee6233df9456a223f9b9956923e374b/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/cee6233df9456a223f9b9956923e374b/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/897d558658444a4ff2a0c642784e8abc/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/897d558658444a4ff2a0c642784e8abc/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5c20345f89cd4033c2ee6a6927e0c227/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5c20345f89cd4033c2ee6a6927e0c227/AndroidManifest.xml:21:5-23:58
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/3d28b3b10ed530b0b8c3c81b4ab8d37b/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/3d28b3b10ed530b0b8c3c81b4ab8d37b/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/ef83411ca105a1aadb6d53c187916895/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/ef83411ca105a1aadb6d53c187916895/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/1fbdb38196a8a4ce79f0d6990e3a39dd/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/1fbdb38196a8a4ce79f0d6990e3a39dd/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/d669081b71f55f238957dcd83f1abd84/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/d669081b71f55f238957dcd83f1abd84/AndroidManifest.xml:2:3-70
+MERGED from [com.google.android.gms:play-services-vision-common:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-12.0.1.aar/8f09e62d5d390eb5af752673fdfb8a30/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-12.0.1.aar/8f09e62d5d390eb5af752673fdfb8a30/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/afcc28b0ca88cc027e8386407d80a67b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/afcc28b0ca88cc027e8386407d80a67b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.1.aar/3a7ef71ed3a279c2bd8367f61a8c84ea/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.1.aar/3a7ef71ed3a279c2bd8367f61a8c84ea/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/a3197a553334ce10de827b4c78524346/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/a3197a553334ce10de827b4c78524346/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-12.0.1.aar/dd96032df500048c1146245e3f777563/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-12.0.1.aar/dd96032df500048c1146245e3f777563/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/4d9fb1ddd83a532df674c33be37d5bff/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/4d9fb1ddd83a532df674c33be37d5bff/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/7b3aea660191f7f57d778022e686cd3f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/7b3aea660191f7f57d778022e686cd3f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/ebdb3d497d7874d372a7b632b4a4c518/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/ebdb3d497d7874d372a7b632b4a4c518/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/26080172a2483a85cd2619f87e1531a6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/26080172a2483a85cd2619f87e1531a6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-base-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.1.aar/cd4fb20865e79408a859ada653438afd/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.1.aar/cd4fb20865e79408a859ada653438afd/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.1.aar/0647540946a047b53b8852d14916ac3e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.1.aar/0647540946a047b53b8852d14916ac3e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision-common-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-12.0.1.aar/cde5e0113ac24892fa78f7e701c559d6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision-common-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-12.0.1.aar/cde5e0113ac24892fa78f7e701c559d6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.1.aar/5b976098a0f40a602aed0b7ad77b5e50/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.1.aar/5b976098a0f40a602aed0b7ad77b5e50/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/59f0a7dc1705de06e97168669d0c7d60/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/59f0a7dc1705de06e97168669d0c7d60/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/014a902b94b684fd84f722fbb2c1692a/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml
+uses-feature#android.hardware.camera
+ADDED from [:react-native-camera] /Users/robertpop/Public/personalProjects/sarca/node_modules/react-native-camera/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:5-15:36
+	android:required
+		ADDED from [:react-native-camera] /Users/robertpop/Public/personalProjects/sarca/node_modules/react-native-camera/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:9-33
+	android:name
+		ADDED from [:react-native-camera] /Users/robertpop/Public/personalProjects/sarca/node_modules/react-native-camera/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:9-47
+uses-feature#android.hardware.camera.autofocus
+ADDED from [:react-native-camera] /Users/robertpop/Public/personalProjects/sarca/node_modules/react-native-camera/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:5-18:36
+	android:required
+		ADDED from [:react-native-camera] /Users/robertpop/Public/personalProjects/sarca/node_modules/react-native-camera/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:9-33
+	android:name
+		ADDED from [:react-native-camera] /Users/robertpop/Public/personalProjects/sarca/node_modules/react-native-camera/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:9-57
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/014a902b94b684fd84f722fbb2c1692a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/db6763ec08ddfee54fd69b76c2c46cb6/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/db6763ec08ddfee54fd69b76c2c46cb6/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/9ec18f4618849137daabb70956912c5b/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/9ec18f4618849137daabb70956912c5b/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d5d3a65790865c6973ffdc3d7262157c/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d5d3a65790865c6973ffdc3d7262157c/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/0ffab15032276742633b27b45dd34acf/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/0ffab15032276742633b27b45dd34acf/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d42a946bb7c551caf39310bd865cdcdf/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d42a946bb7c551caf39310bd865cdcdf/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/cee6233df9456a223f9b9956923e374b/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/cee6233df9456a223f9b9956923e374b/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/897d558658444a4ff2a0c642784e8abc/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/897d558658444a4ff2a0c642784e8abc/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5c20345f89cd4033c2ee6a6927e0c227/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5c20345f89cd4033c2ee6a6927e0c227/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/014a902b94b684fd84f722fbb2c1692a/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/014a902b94b684fd84f722fbb2c1692a/AndroidManifest.xml:27:13-51
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:1:1-28:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:1:1-28:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:1:1-28:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/afcc28b0ca88cc027e8386407d80a67b/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/afcc28b0ca88cc027e8386407d80a67b/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/afcc28b0ca88cc027e8386407d80a67b/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/afcc28b0ca88cc027e8386407d80a67b/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/a3197a553334ce10de827b4c78524346/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/a3197a553334ce10de827b4c78524346/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:12.0.1] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/a3197a553334ce10de827b4c78524346/AndroidManifest.xml:24:13-58
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/59f0a7dc1705de06e97168669d0c7d60/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/59f0a7dc1705de06e97168669d0c7d60/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/59f0a7dc1705de06e97168669d0c7d60/AndroidManifest.xml:26:13-58

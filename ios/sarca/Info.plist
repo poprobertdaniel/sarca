@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+  <key>NSCameraUsageDescription</key>
+  <string>We need to access your camera in order to scan QR codes.</string>
 	<key>CFBundleDisplayName</key>
 	<string>Augmented Reality Sarca</string>
 	<key>CFBundleExecutable</key>
