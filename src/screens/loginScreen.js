@@ -1,40 +1,142 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-import { AsyncStorage, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { AsyncStorage, View, Text, StyleSheet, BackHandler } from 'react-native';
 
-export default class LoginScreen extends React.Component {
+import { Icon, Button, FormLabel, FormInput, FormValidationMessage } from 'react-native-elements';
+
+import { isValidEmail, promiseRequest } from '../utils';
+
+import { API } from '../constants/index';
+
+export default class LoginScreen extends Component {
 
 	constructor(props) {
 		super(props)
 		this.state = {
-			cameraPermission: false,
-			data: null,
-			userData: null
+			email: '',
+			emailError: '',
+			password: '',
+			passwordError: '',
+			serverError: ''
 		}
 	}
 
+
 	componentDidMount() {
-		AsyncStorage.getItem('userData', (err, user) => {
-			if(err) this.setState({userData: null})
-			this.setState({
-				userData: JSON.parse(user)
-			})
-		})
+		BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
+	}
+
+	componentWillUnmount() {
+		BackHandler.removeEventListener('hardwareBackPress', this.handleBackPress);
+	}
+
+	handleBackPress = () => {
+		this.props.goBack();
+		return true;
+	}
+
+	updateEmail = (email) => {
+		this.setState({
+      emailError: '',
+      email
+    })
+	}
+
+	updatePassword = (password) => {
+    this.setState({
+      passwordError: '',
+      password
+    })
+	}
+
+	handleLogin = () => {
+		if (this.state.email === '' && this.state.password === '') {
+      this.setState({ emailError: 'Enter an email address', passwordError: 'Enter a password'})
+      return
+    } else if ( this.state.email === '' ) {
+      this.setState({ emailError: 'Enter an email address' })
+      return
+    } else if ( !isValidEmail(this.state.email.trim()) ) {
+      this.setState({
+        emailError: 'Wrong email format'
+      })
+      return
+    } else if ( this.state.password === '' ) {
+      this.setState({ passwordError: 'Enter a password' })
+      return
+    } else {
+			const data = {
+				auth: {
+					email: this.state.email,
+					password: this.state.password
+				}
+			}
+			promiseRequest('POST', API.getToken, data)
+				.then( resp => {
+					if(resp.wrongCredetians) this.setState({serverError: 'Wrong email or password'})
+					const userData = {token: resp.jwt}
+					AsyncStorage.setItem('userData', JSON.stringify(userData))
+						.then( () => {
+							this.props.handleLogin()
+						})
+				})
+				.catch( err => {
+					console.log('err', err)
+				})
+    }
 	}
 
   render() {
     return (
 			<View style={styles.container}>
-				<TouchableOpacity style={styles.buttonContainer}>
-						<Text>
-							Log in
-						</Text>
-				</TouchableOpacity>
-				<TouchableOpacity style={styles.buttonContainer}>
-						<Text>
-							Sign up
-						</Text>
-				</TouchableOpacity>
+				<Button
+					buttonStyle={styles.buttonContainer}
+					large
+					icon={{name: 'arrow-back'}}
+					title='Go back'
+					backgroundColor={'#37474F'}
+					onPress={this.props.goBack}
+				/>
+
+				<FormLabel labelStyle={styles.label}>Email</FormLabel>
+					<FormInput
+						underlineColorAndroid='transparent'
+						onChangeText={(email) => this.updateEmail(email)}
+						textInputRef={'email'}
+						autoCorrect={false}
+						keyboardType={'email-address'}
+						autoCapitalize={'none'}
+						placeholder={'Email'}
+						inputStyle={styles.input}
+						placeholderTextColor={'#424242'}
+					/>
+					<FormValidationMessage>{this.state.emailError}</FormValidationMessage>
+					<FormLabel labelStyle={styles.label}>Parolă</FormLabel>
+					<FormInput
+						underlineColorAndroid='transparent'
+						onChangeText={(password) => this.updatePassword(password)}
+						textInputRef={'pwd'}
+						autoCorrect={false}
+						secureTextEntry={true}
+						placeholder={'Password'}
+						inputStyle={styles.input}
+						placeholderTextColor={'#424242'}
+					/>
+					<FormValidationMessage>{this.state.passwordError}</FormValidationMessage>
+					{
+						this.state.serverError ?
+							<Text>{this.state.serverError}</Text>
+						:
+							null
+					}
+					<Button
+						buttonStyle={styles.loginBtn}
+						large
+						rightIcon={{name: 'login', type: 'material-community'}}
+						title='Login'
+						backgroundColor={'#4DD0E1'}
+						onPress={this.handleLogin}
+					/>
 			</View>
     );
   }
@@ -42,17 +144,36 @@ export default class LoginScreen extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 20,
-		flex: 1,
-		alignItems: 'center',
-		justifyContent: 'center'
+		paddingTop: 20,
 	},
 	buttonContainer: {
-		padding: 20,
-		flex: 1
+		paddingLeft: 20,
+		width: 150,
+		height: 30,
+		marginBottom: 20
 	},
-	text: {
-		marginRight: 20,
-		width: 100
+	formContainer: {
+		marginTop: 20
+	},
+	input: {
+    backgroundColor: '#EEEEEE',
+    borderRadius: 3,
+    borderWidth: 1,
+    paddingLeft: 10,
+		fontSize: 14,
+		color: '#424242'
+	},
+	label: {
+    color: '#666',
+    fontSize: 14
+	},
+	loginBtn: {
+		justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 15,
+		marginTop: 15,
+		marginRight: 50,
+		marginLeft: 50,
+		height: 40
 	}
 });

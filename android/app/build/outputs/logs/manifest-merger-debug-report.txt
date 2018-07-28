@@ -4,6 +4,7 @@ ADDED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/A
 INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:1:1-28:12
 INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:1:1-28:12
 INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml:1:1-28:12
+MERGED from [:react-native-vector-icons] /Users/robertpop/Public/personalProjects/sarca/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-camera] /Users/robertpop/Public/personalProjects/sarca/node_modules/react-native-camera/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-20:12
 MERGED from [com.facebook.react:react-native:0.55.4] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/91095dfe4d414101ba5873d80babcc32/AndroidManifest.xml:2:1-15:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/014a902b94b684fd84f722fbb2c1692a/AndroidManifest.xml:17:1-31:12
@@ -159,6 +160,8 @@ uses-sdk
 INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/robertpop/Public/personalProjects/sarca/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-vector-icons] /Users/robertpop/Public/personalProjects/sarca/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/robertpop/Public/personalProjects/sarca/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-camera] /Users/robertpop/Public/personalProjects/sarca/node_modules/react-native-camera/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-camera] /Users/robertpop/Public/personalProjects/sarca/node_modules/react-native-camera/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.55.4] /Users/robertpop/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/91095dfe4d414101ba5873d80babcc32/AndroidManifest.xml:7:5-9:41

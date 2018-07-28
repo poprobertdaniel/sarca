@@ -10,6 +10,8 @@ import HomeScreen from './screens/homeScreen';
 
 import SideMenu from './components/sideMenu';
 
+import { Icon } from 'react-native-elements';
+
 class HamburgerIcon extends Component {
 
   toggleDrawer=()=>{
@@ -24,10 +26,11 @@ class HamburgerIcon extends Component {
  
         <TouchableOpacity onPress={this.toggleDrawer.bind(this)} >
 
-          <Image
-            source={{uri : 'https://reactnativecode.com/wp-content/uploads/2018/04/hamburger_icon.png'}}
-            style={{ width: 25, height: 25, marginLeft: 10}}
-          />
+          <Icon
+						name='menu'
+						color='#fff'
+						iconStyle={{marginLeft: 20}}
+					/>
 
         </TouchableOpacity>
 

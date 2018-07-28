@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import Permissions from 'react-native-permissions';
 
 import QrScanner from '../components/qrScanner';
 
-import { AsyncStorage, View, Text } from 'react-native';
+import { AsyncStorage, View, StyleSheet } from 'react-native';
 
-import LoginScreen from './loginScreen';
+import { Button } from 'react-native-elements';
 
-export default class HomeScreen extends React.Component {
+import NotLoggedContainer from './notLoggedContainer';
+import { promiseRequest } from '../utils';
+
+import { API } from '../constants';
+
+export default class HomeScreen extends Component {
 
 	constructor(props) {
 		super(props)
@@ -31,36 +36,58 @@ export default class HomeScreen extends React.Component {
 		})
 	}
 
-	onScanComplete = data => {
-		AsyncStorage.getItem('requestData', (err, data) => {
-			const jsonData = JSON.parse(data)
-			console.log(jsonData)
+	showCamera = () => {
+		AsyncStorage.getItem('userData', (err, user) => {
 			this.setState({
-				data
+				userData: JSON.parse(user)
 			})
 		})
 	}
 
-	renderForm = () => {
-		return (
-			<LoginScreen></LoginScreen>
-		)
+	onScanComplete = data => {
+		console.log(data.split('&'))
+		const qrData = data.split('&')
+		const id = qrData[0]
+		const s = qrData[1]
+		console.log('id', id)
+		console.log(s)
+		AsyncStorage.getItem('requestData', (err, data) => {
+			const jsonData = JSON.parse(data)
+			console.log('json data', jsonData)
+			promiseRequest('GET', API.qr(id))
+				.then( resp => {
+					console.log('qr res', resp)
+				})
+				.catch( err => {
+					console.log('qr err', err)
+				})
+		})
+	}
+
+	handleLogout = () => {
+		AsyncStorage.removeItem('userData')
+			.then( () => {
+				this.setState({userData: null})
+			})
 	}
 
   render() {
 		const {userData} = this.state
     return (
-			<View>
+			<View style={{flex: 1}}>
 				{
 					userData ?
 						<QrScanner
 							handleScan={data => { this.onScanComplete(data) }}
 							scannedData={this.state.data}
+							handleLogout={this.handleLogout}
 						>
 						</QrScanner>
-	
 					:
-					this.renderForm()
+						<NotLoggedContainer
+							showCamera={this.showCamera}
+						>
+						</NotLoggedContainer>
 				}
 			</View>
     );

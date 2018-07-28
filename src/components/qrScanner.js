@@ -2,6 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, AsyncStorage } from 'react-native';
 import QRCodeScanner from 'react-native-qrcode-scanner';
 
+import { Button } from 'react-native-elements';
+
 export default class QrScanner extends React.Component {
 
 	constructor(props) {
@@ -23,9 +25,15 @@ export default class QrScanner extends React.Component {
           </Text>
         }
         bottomContent={
-          <TouchableOpacity style={styles.buttonTouchable}>
-            <Text style={styles.buttonText}>OK. Got it!</Text>
-          </TouchableOpacity>
+          <Button
+            containerViewStyle={styles.buttonContainer}
+            buttonStyle={{marginTop: 50}}
+            large
+            rightIcon={{name: 'logout', type: 'material-community'}}
+            title='Logout'
+            backgroundColor={'#4DD0E1'}
+            onPress={this.props.handleLogout}
+          />
 				}
 				reactivate={true}
 				reactivateTimeout={2000}
@@ -52,4 +60,9 @@ const styles = StyleSheet.create({
   buttonTouchable: {
     padding: 16,
   },
+  buttonContainer: {
+		padding: 20,
+		marginTop: 20,
+		width: 300
+	},
 });
