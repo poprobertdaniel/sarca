@@ -48,12 +48,12 @@
         "source": "/Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/5d2a710c11f6dc13d708e3747b74ecbd/res/drawable-mdpi/abc_ic_menu_moreoverflow_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/robertpop/Public/personalProjects/sarca/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_ic_ab_back_mtrl_am_alpha.png.flat",
-        "source": "/Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/5d2a710c11f6dc13d708e3747b74ecbd/res/drawable-mdpi/abc_ic_ab_back_mtrl_am_alpha.png"
-    },
-    {
         "merged": "/Users/robertpop/Public/personalProjects/sarca/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
         "source": "/Users/robertpop/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/afcc28b0ca88cc027e8386407d80a67b/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/robertpop/Public/personalProjects/sarca/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_ic_ab_back_mtrl_am_alpha.png.flat",
+        "source": "/Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/5d2a710c11f6dc13d708e3747b74ecbd/res/drawable-mdpi/abc_ic_ab_back_mtrl_am_alpha.png"
     },
     {
         "merged": "/Users/robertpop/Public/personalProjects/sarca/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -88,12 +88,12 @@
         "source": "/Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/014a902b94b684fd84f722fbb2c1692a/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
-        "merged": "/Users/robertpop/Public/personalProjects/sarca/android/app/build/intermediates/res/merged/debug/color-v11_abc_background_cache_hint_selector_material_light.xml.flat",
-        "source": "/Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/014a902b94b684fd84f722fbb2c1692a/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
-    },
-    {
         "merged": "/Users/robertpop/Public/personalProjects/sarca/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "/Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/5d2a710c11f6dc13d708e3747b74ecbd/res/drawable-hdpi/abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/robertpop/Public/personalProjects/sarca/android/app/build/intermediates/res/merged/debug/color-v11_abc_background_cache_hint_selector_material_light.xml.flat",
+        "source": "/Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/014a902b94b684fd84f722fbb2c1692a/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     },
     {
         "merged": "/Users/robertpop/Public/personalProjects/sarca/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_btn_check_to_on_mtrl_015.png.flat",

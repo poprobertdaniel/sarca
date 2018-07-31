@@ -5,6 +5,9 @@ import { Button } from 'react-native-elements';
 
 import Camera from 'react-native-camera';
 
+import Tts from 'react-native-tts';
+
+
 export default class QrScanner extends React.Component {
 
 	constructor(props) {
@@ -28,8 +31,10 @@ export default class QrScanner extends React.Component {
 
   render() {
     const { scannedData } = this.props;
-    console.log('scanned data', scannedData)
     const textToShow = scannedData ? scannedData.text : 'No scanned data'
+    if (scannedData && scannedData.audio) {
+      Tts.speak(scannedData.text)
+    }
     return (
       <View style={styles.container}>
         <Camera

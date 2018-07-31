@@ -511,6 +511,21 @@
             ]
         },
         {
+            "outputFile": "/Users/robertpop/Public/personalProjects/sarca/android/app/build/intermediates/res/merged/debug/values-ldltr-v21_values-ldltr-v21.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/014a902b94b684fd84f722fbb2c1692a/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/Users/robertpop/Public/personalProjects/sarca/android/app/build/intermediates/res/merged/debug/values-v24_values-v24.arsc.flat",
             "map": [
                 {
@@ -538,21 +553,6 @@
                         "startOffsets": "55,212,347,416,480,549",
                         "endColumns": "156,134,68,63,68,69",
                         "endOffsets": "207,342,411,475,544,614"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/robertpop/Public/personalProjects/sarca/android/app/build/intermediates/res/merged/debug/values-ldltr-v21_values-ldltr-v21.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/robertpop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/014a902b94b684fd84f722fbb2c1692a/res/values-ldltr-v21/values-ldltr-v21.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "112",
-                        "endOffsets": "163"
                     }
                 }
             ]

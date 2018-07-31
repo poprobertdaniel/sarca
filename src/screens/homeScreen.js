@@ -66,13 +66,13 @@ export default class HomeScreen extends Component {
 			const { requestData } = jsonData
 			promiseRequest('GET', API.qr(id))
 				.then( resp => {
-					const { image_url, sound_url, text_data } = resp
+					const { image_url, text_data } = resp
 					const filteredData = {};
 					for (let i = 0; i < requestData.length; i++) {
 						if(requestData[i].text) {
 							filteredData.text = text_data
 						} else if (requestData[i].audio) {
-							filteredData.audio = sound_url
+							filteredData.audio = true
 						} else if (requestData[i].image) {
 							filteredData.image = image_url
 						}
