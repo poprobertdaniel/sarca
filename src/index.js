@@ -12,7 +12,21 @@ import SideMenu from './components/sideMenu';
 
 import { Icon } from 'react-native-elements';
 
+const actions = {
+  init() {
+    return { userLogged: false }
+  },
+  logUser() {
+    return { userLogged: true }
+  },
+  logoutUser() {
+    return{ userLogged: false }
+  }
+}
+
 class HamburgerIcon extends Component {
+
+  state=actions.init();
 
   toggleDrawer=()=>{
     this.props.navigationProps.toggleDrawer();

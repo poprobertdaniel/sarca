@@ -6,8 +6,6 @@ import QrScanner from '../components/qrScanner';
 
 import { AsyncStorage, View, StyleSheet } from 'react-native';
 
-import { Button } from 'react-native-elements';
-
 import NotLoggedContainer from './notLoggedContainer';
 import { promiseRequest } from '../utils';
 
@@ -25,15 +23,30 @@ export default class HomeScreen extends Component {
 	}
 
 	componentDidMount() {
-		Permissions.request('camera').then(response => {
-      this.setState({ cameraPermission: response })
-		})
-		AsyncStorage.getItem('userData', (err, user) => {
-			if(err) this.setState({userData: null})
-			this.setState({
-				userData: JSON.parse(user)
+		AsyncStorage.setItem('requestData', JSON.stringify({
+			requestData: [
+				{
+					text: true
+				},
+				{
+					image: false
+				},
+				{
+					audio: false
+				}
+			]
+		}))
+			.then( () => {
+				Permissions.request('camera').then(response => {
+					this.setState({ cameraPermission: response })
+				})
+				AsyncStorage.getItem('userData', (err, user) => {
+					if(err) this.setState({userData: null})
+					this.setState({
+						userData: JSON.parse(user)
+					})
+				})
 			})
-		})
 	}
 
 	showCamera = () => {
@@ -45,18 +58,26 @@ export default class HomeScreen extends Component {
 	}
 
 	onScanComplete = data => {
-		console.log(data.split('&'))
 		const qrData = data.split('&')
 		const id = qrData[0]
 		const s = qrData[1]
-		console.log('id', id)
-		console.log(s)
 		AsyncStorage.getItem('requestData', (err, data) => {
 			const jsonData = JSON.parse(data)
-			console.log('json data', jsonData)
+			const { requestData } = jsonData
 			promiseRequest('GET', API.qr(id))
 				.then( resp => {
-					console.log('qr res', resp)
+					const { image_url, sound_url, text_data } = resp
+					const filteredData = {};
+					for (let i = 0; i < requestData.length; i++) {
+						if(requestData[i].text) {
+							filteredData.text = text_data
+						} else if (requestData[i].audio) {
+							filteredData.audio = sound_url
+						} else if (requestData[i].image) {
+							filteredData.image = image_url
+						}
+					}
+					this.setState({data: filteredData})
 				})
 				.catch( err => {
 					console.log('qr err', err)
@@ -70,6 +91,7 @@ export default class HomeScreen extends Component {
 				this.setState({userData: null})
 			})
 	}
+
 
   render() {
 		const {userData} = this.state
