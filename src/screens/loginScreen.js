@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { AsyncStorage, View, Text, StyleSheet, BackHandler } from 'react-native';
 
-import { Icon, Button, FormLabel, FormInput, FormValidationMessage } from 'react-native-elements';
+import { Button, FormLabel, FormInput, FormValidationMessage } from 'react-native-elements';
 
 import { isValidEmail, promiseRequest } from '../utils';
 
@@ -35,14 +35,14 @@ export default class LoginScreen extends Component {
 		return true;
 	}
 
-	updateEmail = (email) => {
+	updateEmail = email => {
 		this.setState({
       emailError: '',
       email
     })
 	}
 
-	updatePassword = (password) => {
+	updatePassword = password => {
     this.setState({
       passwordError: '',
       password
@@ -91,9 +91,10 @@ export default class LoginScreen extends Component {
 			<View style={styles.container}>
 				<Button
 					buttonStyle={styles.buttonContainer}
-					large
+					fontSize={14}
 					icon={{name: 'arrow-back'}}
 					title='Go back'
+					color={'#fff'}
 					backgroundColor={'#37474F'}
 					onPress={this.props.goBack}
 				/>
@@ -101,7 +102,7 @@ export default class LoginScreen extends Component {
 				<FormLabel labelStyle={styles.label}>Email</FormLabel>
 					<FormInput
 						underlineColorAndroid='transparent'
-						onChangeText={(email) => this.updateEmail(email)}
+						onChangeText={this.updateEmail}
 						textInputRef={'email'}
 						autoCorrect={false}
 						keyboardType={'email-address'}
@@ -111,10 +112,10 @@ export default class LoginScreen extends Component {
 						placeholderTextColor={'#424242'}
 					/>
 					<FormValidationMessage>{this.state.emailError}</FormValidationMessage>
-					<FormLabel labelStyle={styles.label}>Parolă</FormLabel>
+					<FormLabel labelStyle={styles.label}>Password</FormLabel>
 					<FormInput
 						underlineColorAndroid='transparent'
-						onChangeText={(password) => this.updatePassword(password)}
+						onChangeText={this.updatePassword}
 						textInputRef={'pwd'}
 						autoCorrect={false}
 						secureTextEntry={true}
@@ -131,7 +132,7 @@ export default class LoginScreen extends Component {
 					}
 					<Button
 						buttonStyle={styles.loginBtn}
-						large
+						fontSize={14}
 						rightIcon={{name: 'login', type: 'material-community'}}
 						title='Login'
 						backgroundColor={'#4DD0E1'}
@@ -147,9 +148,8 @@ const styles = StyleSheet.create({
 		paddingTop: 20,
 	},
 	buttonContainer: {
-		paddingLeft: 20,
 		width: 150,
-		height: 30,
+		height: 40,
 		marginBottom: 20
 	},
 	formContainer: {

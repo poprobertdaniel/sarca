@@ -41,7 +41,13 @@ export default class NotLoggedContainer extends Component {
 			)
 		}
 		if (this.state.showsignup) {
-			return (<SignupScreen goBack={this.toggleRegister}></SignupScreen>)
+			return (
+				<SignupScreen
+					goBack={this.toggleRegister}
+					handleSignup={this.props.showCamera}
+					>
+				</SignupScreen>
+			)
 		}
     return (
 			<View style={styles.container}>
