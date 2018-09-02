@@ -84,7 +84,14 @@ export default class SignupScreen extends Component {
 
 			promiseRequest('POST', API.signup, data)
 				.then( resp => {
-					if(resp.status !== 200) this.setState({serverError: 'Failed to creater user'})
+					if(resp.status === 204) {
+						this.setState({serverError: 'Username or Email already exists'})
+						return
+					}
+					if (resp.status === 500) {
+						this.setState({serverError: 'Server error. Failed to create user'})
+						return
+					}
 					AsyncStorage.setItem('userData', JSON.stringify(data))
 						.then( () => {
 							this.props.handleSignup()
@@ -157,7 +164,7 @@ export default class SignupScreen extends Component {
 				<FormValidationMessage>{this.state.passwordError}</FormValidationMessage>
 				{
 					this.state.serverError ?
-						<Text>{this.state.serverError}</Text>
+						<Text style={styles.errMessage}>{this.state.serverError}</Text>
 					:
 						null
 				}
@@ -203,5 +210,10 @@ const styles = StyleSheet.create({
 		marginRight: 50,
 		marginLeft: 50,
 		height: 40
+	},
+	errMessage: {
+		textAlign: 'center',
+		fontSize: 16,
+		color: '#d32f2f'
 	}
 });

@@ -73,7 +73,10 @@ export default class LoginScreen extends Component {
 			}
 			promiseRequest('POST', API.getToken, data)
 				.then( resp => {
-					if(resp.wrongCredetians) this.setState({serverError: 'Wrong email or password'})
+					if(resp.wrongCredetians) {
+						this.setState({serverError: 'Wrong email or password'})
+						return
+					}
 					const userData = {token: resp.jwt}
 					AsyncStorage.setItem('userData', JSON.stringify(userData))
 						.then( () => {
@@ -126,7 +129,7 @@ export default class LoginScreen extends Component {
 					<FormValidationMessage>{this.state.passwordError}</FormValidationMessage>
 					{
 						this.state.serverError ?
-							<Text>{this.state.serverError}</Text>
+							<Text style={styles.errMessage}>{this.state.serverError}</Text>
 						:
 							null
 					}
@@ -175,5 +178,10 @@ const styles = StyleSheet.create({
 		marginRight: 50,
 		marginLeft: 50,
 		height: 40
+	},
+	errMessage: {
+		textAlign: 'center',
+		fontSize: 16,
+		color: '#d32f2f'
 	}
 });

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
  
-import { Platform, View, Text, Image, TouchableOpacity, YellowBox } from 'react-native';
+import { View, TouchableOpacity } from 'react-native';
 
 import { DrawerNavigator } from 'react-navigation';
 
@@ -55,20 +55,20 @@ class HamburgerIcon extends Component {
   
   }
 }
-    const HomeScreenStack = StackNavigator({
-      First: {
-        screen: HomeScreen,
-        navigationOptions: ({ navigation }) => ({
-          title: 'Qr Scanner',
-          headerLeft : <HamburgerIcon navigationProps={ navigation }/>,
 
-          headerStyle: {
-            backgroundColor: '#26C6DA'
-          },
-          headerTintColor: '#EEEEEE',
-        })
-      },
-    });
+const HomeScreenStack = StackNavigator({
+	First: {
+		screen: HomeScreen,
+		navigationOptions: ({ navigation }) => ({
+			title: 'Qr Scanner',
+			headerLeft : <HamburgerIcon navigationProps={ navigation }/>,
+			headerStyle: {
+				backgroundColor: '#26C6DA'
+			},
+			headerTintColor: '#EEEEEE',
+		})
+	},
+});
 
 export default App = DrawerNavigator({
 	MainStack: {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, Image, View, TouchableOpacity, Modal } from 'react-native';
 
-import { Button } from 'react-native-elements';
+import { Button, Icon } from 'react-native-elements';
 
 import Camera from 'react-native-camera';
 
@@ -27,14 +27,25 @@ export default class QrScanner extends React.Component {
 
   setModalVisible(visible) {
     this.setState({modalVisible: visible});
-  }
+	}
+
+	stopAudio = () => {
+		Tts.stop()
+	}
+
+	startAudio = () => {
+    const { scannedData } = this.props;
+		if (scannedData && scannedData.audio) {
+      Tts.speak(scannedData.audioData)
+    }
+	}
 
   render() {
     const { scannedData } = this.props;
-    const textToShow = scannedData ? scannedData.text : 'No scanned data'
-    if (scannedData && scannedData.audio) {
-      Tts.speak(scannedData.text)
-    }
+		let textToShow = scannedData ? scannedData.text : 'No scanned data'
+		if(scannedData && !scannedData.text && (scannedData.audio || scannedData.image ) ) {
+			textToShow = 'Text is not selected'
+		}
     return (
       <View style={styles.container}>
         <Camera
@@ -53,6 +64,29 @@ export default class QrScanner extends React.Component {
             >
               {textToShow}
             </Text>
+						{
+							scannedData && scannedData.audio ?
+							<View style={{flexDirection: 'row', marginBottom: 10, alignContent: 'center', justifyContent: 'center'}}>
+								<Button
+									containerViewStyle={styles.audioIcon}
+									rightIcon={{name: 'controller-play', type: 'entypo'}}
+									title={'Play'}
+									fontSize={14}
+									backgroundColor={'#43A047'}
+									onPress={this.startAudio}
+								/>
+								<Button
+									containerViewStyle={styles.audioIcon}
+									rightIcon={{name: 'stop', type: 'font-awesome'}}
+									title={'Stop'}
+									fontSize={14}
+									backgroundColor={'#e53935'}
+									onPress={this.stopAudio}
+								/>
+							</View>
+							:
+							null
+						}
           </TouchableOpacity>
           {
             scannedData && scannedData.image ?
@@ -116,7 +150,10 @@ const styles = StyleSheet.create({
     width: 200,
     height: 30,
     marginBottom: 25
-  },
+	},
+	audioIcon: {
+		height: 40
+	},
   textContainer: {
     position: 'absolute',
     top: 0,
@@ -130,6 +167,6 @@ const styles = StyleSheet.create({
   },
   img: {
     width: 200,
-    height: 200,
+    height: 150,
   }
 });

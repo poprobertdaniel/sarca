@@ -4,12 +4,12 @@ import Permissions from 'react-native-permissions';
 
 import QrScanner from '../components/qrScanner';
 
-import { AsyncStorage, View, StyleSheet } from 'react-native';
-
+import { AsyncStorage, View } from 'react-native';
 import NotLoggedContainer from './notLoggedContainer';
 import { promiseRequest } from '../utils';
 
 import { API } from '../constants';
+
 
 export default class HomeScreen extends Component {
 
@@ -73,6 +73,7 @@ export default class HomeScreen extends Component {
 							filteredData.text = text_data
 						} else if (requestData[i].audio) {
 							filteredData.audio = true
+							filteredData.audioData = text_data
 						} else if (requestData[i].image) {
 							filteredData.image = image_url
 						}
@@ -94,13 +95,14 @@ export default class HomeScreen extends Component {
 
 
   render() {
+		console.log('rend')
 		const {userData} = this.state
     return (
 			<View style={{flex: 1}}>
 				{
 					userData ?
 						<QrScanner
-							handleScan={data => { this.onScanComplete(data) }}
+							handleScan={this.onScanComplete}
 							scannedData={this.state.data}
 							handleLogout={this.handleLogout}
 						>
