@@ -4,7 +4,7 @@ import Permissions from 'react-native-permissions';
 
 import QrScanner from '../components/qrScanner';
 
-import { AsyncStorage, View } from 'react-native';
+import { AsyncStorage, View, NetInfo } from 'react-native';
 import NotLoggedContainer from './notLoggedContainer';
 import { promiseRequest } from '../utils';
 
@@ -64,25 +64,33 @@ export default class HomeScreen extends Component {
 		AsyncStorage.getItem('requestData', (err, data) => {
 			const jsonData = JSON.parse(data)
 			const { requestData } = jsonData
-			promiseRequest('GET', API.qr(id))
-				.then( resp => {
-					const { image_url, text_data } = resp
+			NetInfo.getConnectionInfo().then(connectionInfo => {
+				if(connectionInfo.type === 'none') {
 					const filteredData = {};
-					for (let i = 0; i < requestData.length; i++) {
-						if(requestData[i].text) {
-							filteredData.text = text_data
-						} else if (requestData[i].audio) {
-							filteredData.audio = true
-							filteredData.audioData = text_data
-						} else if (requestData[i].image) {
-							filteredData.image = image_url
-						}
-					}
+					filteredData.text = s
 					this.setState({data: filteredData})
-				})
-				.catch( err => {
-					console.log('qr err', err)
-				})
+				} else {
+					promiseRequest('GET', API.qr(id))
+						.then( resp => {
+							const { image_url, text_data } = resp
+							const filteredData = {};
+							for (let i = 0; i < requestData.length; i++) {
+								if(requestData[i].text) {
+									filteredData.text = text_data
+								} else if (requestData[i].audio) {
+									filteredData.audio = true
+									filteredData.audioData = text_data
+								} else if (requestData[i].image) {
+									filteredData.image = image_url
+								}
+							}
+							this.setState({data: filteredData})
+						})
+						.catch( err => {
+							console.log('qr err', err)
+						})
+				}
+			})
 		})
 	}
 
